@@ -9,9 +9,8 @@ function Navbar() {
         { name: "Contacto", link: "/contact" },
         { name: "Servicios", link: "/services" },
         { name: "Reservas", link: "/reservation" },
-        { name: "Galería", link: "/galery" },
-        { name: "Mapa", link: "/map" },
-        { name: "Reclamos", link: "/claims" }
+        { name: "Galería", link: "/galery" }
+       
     ];
     const [open, setOpen] = useState(false);
     return (

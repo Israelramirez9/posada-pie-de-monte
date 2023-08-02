@@ -10,14 +10,14 @@ function Services() {
         <div className=' w-4/5 flex flex-col items-center justify-center border-green-700 rounded-md border-solid border-4 p-4 m-4 bg-green-800 bg-opacity-90 text-white'>
           <h1 className='font-bold mb-2 border-b-2 inline-block w-full text-2xl'>Servicios</h1>
           <div className='h-80  flex justify-center'>
-            <img className="lg:w-4/5 lg:object-cover object-contain rounded-md" src="./media/images/piscina-noche2.jpg"></img>
+            <img className="lg:w-4/5 lg:object-cover object-contain rounded-md" src="./media/images/image53.jpg"></img>
           </div>
           <p className='text-justify p-4 font-normal'>
             La Posada Piedemonte nace como una empresa familiar. Nuestro origen se basa en la necesidad de darle un uso adecuado al terreno adicional a nuestra casa, que inicialmente era utilizado para fines de semana y la cual según opiniones de nuestros amigos y visitantes era ideal para una posada. Ubicada al pie del cerro que conforma el Parque Nacional Chorro del Indio, rodeada de vegetación en el sector Altos de los Criollitos, sobre el márgen derecho de la Av. Rotaria de San Cristóbal. La Posada Piedemonte ofrece al visitante un clima de absoluta tranquilidad y sosiego, con vista sobre gran parte de la ciudad y sus alrededores.
           </p>
           <h1 className='font-bold mb-2 border-b-2 inline-block w-full text-2xl'>Habitaciones</h1>
           <div className='h-80  flex justify-center'>
-            <img className="lg:w-4/5 lg:object-cover object-contain rounded-md" src="./media/images/habitacion3.jpeg"></img>
+            <img className="lg:w-4/5 lg:object-cover object-contain rounded-md" src="./media/images/image7.jpg"></img>
           </div>
           <p className='text-justify p-4 font-normal'>
              Construida en su mayor parte por una estructura tipo colonial de dos niveles, conformada por 15 habitaciones, ubicada sobre una extensión de terreno de 3000m2 aproximadamente, en el sector Altos de los Criollitos sobre el margen derecho de la Av. Rotaria de San Cristóbal.
