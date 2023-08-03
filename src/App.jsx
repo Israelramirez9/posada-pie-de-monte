@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import Claims from './components/Claims'
+
 import Galery from './components/Galery'
 import Contact from './components/Contact'
 import Reservation from './components/Reservation'
 import Services from './components/Services'
 import Start from './components/Start'
-import Map from './components/Map'
+
 
 function App() {
 
@@ -22,18 +22,8 @@ function App() {
 
     },
     {
-      path: "/map",
-      element: <Map/>,
-
-    },
-    {
       path: "/galery",
       element: <Galery />,
-
-    },
-    {
-      path: "/claims",
-      element: <Claims />,
 
     },
     {
