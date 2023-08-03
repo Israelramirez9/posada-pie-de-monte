@@ -10,7 +10,7 @@ function Navbar() {
         { name: "Servicios", link: "/services" },
         { name: "Reservas", link: "/reservation" },
         { name: "Galería", link: "/galery" }
-       
+
     ];
     const [open, setOpen] = useState(false);
     return (
@@ -26,7 +26,7 @@ function Navbar() {
                 {/* Menu icon */}
                 <div onClick={() => setOpen(!open)} className='absolute right-8 top-10 cursor-pointer lg:hidden w-7 h-7 flex items-center justify-center'>
                     {
-                        open ? <BiX size={28}/> : <BiMenu size={28} />
+                        open ? <BiX size={28} /> : <BiMenu size={28} />
                     }
                 </div>
                 {/* linke items */}
