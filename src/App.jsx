@@ -10,7 +10,7 @@ import Start from './components/Start'
 
 function App() {
 
-  const router = createBrowserRouter([
+  const routes = [
     {
       path: "/",
       element: <Start />,
@@ -36,18 +36,16 @@ function App() {
       element: <Reservation />,
 
     }
-  ].map((route)=>({
+  ].map((route) => ({
     ...route,
     path: import.meta.env.BASE_URL + route.path
-  })))  
-  return (
-    <>
+  }))
+  
+  console.log(routes);
 
-      <RouterProvider router={router}>
-      </RouterProvider>
+  const router = createBrowserRouter(routes)
 
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
