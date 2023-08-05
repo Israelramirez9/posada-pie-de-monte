@@ -11,7 +11,10 @@ function Navbar() {
         { name: "Reservas", link: "/reservation" },
         { name: "Galería", link: "/galery" }
 
-    ];
+    ].map((route) => ({
+        ...route,
+        link: import.meta.env.BASE_URL + route.link
+    }));
     const [open, setOpen] = useState(false);
     return (
 
@@ -19,7 +22,7 @@ function Navbar() {
             <div className='lg:flex items-center justify-between bg-white bg-opacity-25 py-4 lg:px-10 px-7'>
                 {/* logo section */}
                 <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-                    <Link to="/">
+                    <Link to={import.meta.env.BASE_URL + "/"}>
                         <img src="./media/images/logo-removebg.png"></img>
                     </Link>
                 </div>

@@ -12,9 +12,9 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path:  import.meta.env.BASE_URL,
+      path: "/",
       element: <Start />,
-      errorElement:<h1>Page not Found, error 404</h1>
+      errorElement: <h1>Page not Found, error 404</h1>
     },
     {
       path: "/contact",
@@ -36,7 +36,10 @@ function App() {
       element: <Reservation />,
 
     }
-  ])
+  ].map((route)=>({
+    ...route,
+    path: import.meta.env.BASE_URL + route.path
+  })))  
   return (
     <>
 
