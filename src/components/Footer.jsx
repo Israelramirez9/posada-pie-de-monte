@@ -1,9 +1,9 @@
 import React from 'react'
 import { BsFacebook, BsInstagram, BsMailbox } from 'react-icons/bs'
-import '../styles/footer.css'
+
 function Footer() {
     return (
-        <footer className='lg:flex justify-around items-center bg-footer text-gray-700 text-center'>
+        <footer className='lg:flex justify-around items-center text-gray-700 text-center bg-gradient-to-b from-white to-yellow-soft'>
             <div className='flex flex-col justify-center items-center'>
                 <p className='p-4 pb-0 border-b-2 border-gray-600 text-xl'>Nuestras Redes: </p>
                 <div className='flex gap-8 justify-center p-4'>

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Navbar from './Navbar'
 import { listImages } from './imgListMain'
-import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
+import { BsArrowRightCircle, BsArrowLeftCircle } from 'react-icons/bs'
 
 function Start() {
 
@@ -12,7 +12,9 @@ function Start() {
     const imgNode = listNode.querySelectorAll("li>img,li>video")[currentIndex];
     if (imgNode) {
       imgNode.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
+        block: 'nearest',
+        inline: 'center'
       });
     }
   }, [currentIndex])
@@ -34,9 +36,9 @@ function Start() {
   console.log(currentIndex);
   return (
     <>
-      <BsFillArrowLeftCircleFill onClick={() => scrollToImage('left')} className='absolute top-1/2 left-4 cursor-pointer hover:bg-white rounded-full z-20 bg-green-main' size={40} />
-      <BsFillArrowRightCircleFill onClick={() => scrollToImage('right')} className='absolute top-1/2 right-4 cursor-pointer hover:bg-white rounded-full bg-green-main' size={40} />
-      <h1 className='absolute bottom-5 text-green-main bg-white font-bold text-2xl lg:text-4xl bg-slate-400 p-2 m-2 rounded-lg bg-opacity-70 shadow-md'>SU DESCANSO ES NUESTRA PRIORIDAD...</h1>
+      <BsArrowLeftCircle onClick={() => scrollToImage('left')} className='absolute top-1/2 left-4 cursor-pointer hover:bg-white rounded-full z-20 bg-green-100' size={40} />
+      <BsArrowRightCircle onClick={() => scrollToImage('right')} className='absolute top-1/2 right-4 cursor-pointer hover:bg-white rounded-full bg-green-100' size={40} />
+      <h1 className='absolute bottom-5 text-green-main bg-white font-bold text-2xl lg:text-4xl p-2 m-2 rounded-lg bg-opacity-70 shadow-md'>SU DESCANSO ES NUESTRA PRIORIDAD...</h1>
       <div className='h-screen w-screen absolute -z-10 overflow-hidden'>
 
         <ul ref={lisRef}>
