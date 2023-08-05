@@ -3,11 +3,16 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
+   
   ],
   theme: {
     extend: {},
-  },
-  plugins: [require('flowbite/plugin')],
+    colors: {
+      'green-gradient': 'rgba(49,191,103,1)',
+      'green-main': ' #209d50 ',
+      'yellow-strong': "#f6b106",
+      'yellow-soft': '#f8b048',
+    }
+  } 
 }
 

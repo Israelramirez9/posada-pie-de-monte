@@ -26,7 +26,7 @@ function Galery() {
       </div>
       <Navbar />
       <div className='flex items-center justify-center'>
-        <h1 className='w-2/3 font-bold text-3xl text-center p-4 border-b-2 border-black'>Galería de Imagenes</h1>
+        <h1 className='w-2/3 font-bold text-3xl text-center p-4 pb-2 border-b-2 border-green-main text-green-main'>Galería de Imagenes</h1>
       </div>
       <div className='p-4 columns-5 columns-xs gap-x-2 m-4'>
 

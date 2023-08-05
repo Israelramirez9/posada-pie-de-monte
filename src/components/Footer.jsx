@@ -1,11 +1,11 @@
 import React from 'react'
 import { BsFacebook, BsInstagram, BsMailbox } from 'react-icons/bs'
-
+import '../styles/footer.css'
 function Footer() {
     return (
-        <footer className='lg:flex justify-around items-center bg-neutral-400 text-white text-center'>
+        <footer className='lg:flex justify-around items-center bg-footer text-gray-700 text-center'>
             <div className='flex flex-col justify-center items-center'>
-                <p className='p-4 pb-0 border-b-2 font-bold text-xl'>Nuestras Redes: </p>
+                <p className='p-4 pb-0 border-b-2 border-gray-600 text-xl'>Nuestras Redes: </p>
                 <div className='flex gap-8 justify-center p-4'>
                     <a href="https://www.facebook.com/posadapiedemont" target='_blanck'>
                         <div className='rounded-full bg-blue-600 w-12 h-12 flex items-center justify-center'>

@@ -34,9 +34,9 @@ function Start() {
   console.log(currentIndex);
   return (
     <>
-      <BsFillArrowLeftCircleFill onClick={() => scrollToImage('left')} className='absolute top-1/2 left-4 cursor-pointer hover:bg-white rounded-full z-20' size={40} />
-      <BsFillArrowRightCircleFill onClick={() => scrollToImage('right')} className='absolute top-1/2 right-4 cursor-pointer hover:bg-white rounded-full' size={40} />
-      <h1 className='absolute bottom-5 text-green-700 font-bold text-2xl lg:text-4xl bg-slate-400 p-2 m-2 rounded-lg bg-opacity-70 shadow-md'>SU DESCANSO ES NUESTRA PRIORIDAD...</h1>
+      <BsFillArrowLeftCircleFill onClick={() => scrollToImage('left')} className='absolute top-1/2 left-4 cursor-pointer hover:bg-white rounded-full z-20 bg-green-main' size={40} />
+      <BsFillArrowRightCircleFill onClick={() => scrollToImage('right')} className='absolute top-1/2 right-4 cursor-pointer hover:bg-white rounded-full bg-green-main' size={40} />
+      <h1 className='absolute bottom-5 text-green-main bg-white font-bold text-2xl lg:text-4xl bg-slate-400 p-2 m-2 rounded-lg bg-opacity-70 shadow-md'>SU DESCANSO ES NUESTRA PRIORIDAD...</h1>
       <div className='h-screen w-screen absolute -z-10 overflow-hidden'>
 
         <ul ref={lisRef}>

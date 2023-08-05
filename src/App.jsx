@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './App.css'
+
 
 import Galery from './components/Galery'
 import Contact from './components/Contact'

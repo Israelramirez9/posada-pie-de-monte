@@ -1,2 +1,4 @@
-# React + Vite
-link(https://israelramirez9.github.io/posada-pie-de-monte/)
+
+# https://israelramirez9.github.io/posada-pie-de-monte/
+
+![posada](./public/media/images/logo-removebg.png)

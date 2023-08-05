@@ -30,12 +30,12 @@ function Navbar() {
                     }
                 </div>
                 {/* linke items */}
-                <ul className={`gap-x-4 lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-opacity-0  lg:z-100 z-[100] left-0 lg:w-auto pl-9 pr-9 w-full text-center transition-all duration-500 ease-in ${open ? 'top-28' : 'top-[-800px]'}`}>
+                <ul className={`lg:gap-4 pb-4  bg-white lg:bg-transparent lg:font-bold lg:text-xl lg:flex lg:flex-row flex flex-col items-center justify-center lg:pb-0  absolute lg:static lg:z-100 z-[100] left-0 lg:w-auto  w-full text-center transition-all duration-500 ease-in ${open ? 'top-28' : 'top-[-800px]'}`}>
                     {
                         Links.map((link, index) => (
-                            <li className='lg:my-0 my-7 font-semibold mb-1' key={index}>
+                            <li className='lg:my-0 font-semibold w-5/6' key={index}>
                                 {/*<a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</a>*/}
-                                <Link to={link.link} className=' block w-full text-gray-800  duration-500 rounded-md border-gray-600 boder-solid border-2 px-2 py-2 bg-slate-400 bg-opacity-70 hover:bg-slate-800 hover:text-white'>{link.name}</Link>
+                                <Link to={link.link} className='lg:border-none pt-4 lg:pt-2 border-b-2 border-solid border-gray-500 block w-full text-green-main  duration-500 px-2 py-2  hover:text-black lg:bg-white lg:bg-opacity-70 rounded-md'>{link.name}</Link>
                             </li>))
                     }
 

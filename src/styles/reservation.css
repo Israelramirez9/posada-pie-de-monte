@@ -1,0 +1,40 @@
+.input-text {
+
+
+    height: 2rem;
+
+    padding: 1rem;
+    margin: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #209d50;
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+input[type="date"] {
+    background-color:rgb(248, 176, 72, 0.8);
+
+    padding: 15px;
+
+
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.main-container {
+    min-height: 600px;
+}
