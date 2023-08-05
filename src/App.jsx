@@ -12,7 +12,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path:  import.meta.env.BASE_URL,
       element: <Start />,
       errorElement:<h1>Page not Found, error 404</h1>
     },
