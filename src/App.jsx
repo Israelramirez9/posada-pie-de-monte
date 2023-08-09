@@ -40,8 +40,6 @@ function App() {
     ...route,
     path: import.meta.env.BASE_URL + route.path
   }))
-  
-  console.log(routes);
 
   const router = createBrowserRouter(routes)
 
