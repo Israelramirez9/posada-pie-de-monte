@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Navbar from './Navbar'
 import { listImages } from './imgListMain'
-import { BsArrowRightCircle, BsArrowLeftCircle } from 'react-icons/bs'
+import { BiSolidLeftArrow, BiSolidRightArrow} from 'react-icons/bi'
 
 function Start() {
 
@@ -18,6 +18,7 @@ function Start() {
       });
     }
   }, [currentIndex])
+
   const scrollToImage = (direction) => {
     if (direction === 'left') {
       if (currentIndex == 0) {
@@ -36,21 +37,23 @@ function Start() {
   console.log(currentIndex);
   return (
     <>
-      <BsArrowLeftCircle onClick={() => scrollToImage('left')} className='absolute top-1/2 left-4 cursor-pointer hover:bg-white rounded-full z-20 bg-green-100' size={40} />
-      <BsArrowRightCircle onClick={() => scrollToImage('right')} className='absolute top-1/2 right-4 cursor-pointer hover:bg-white rounded-full bg-green-100' size={40} />
+      
+        <BiSolidLeftArrow onClick={() => scrollToImage('left')} className='absolute top-1/2 left-4 cursor-pointer text-yellow-strong' size={40} />
+      
+      <BiSolidRightArrow onClick={() => scrollToImage('right')} className='absolute top-1/2 right-4 cursor-pointer text-yellow-strong' size={40} />
       <h1 className='absolute bottom-5 text-green-main bg-white font-bold text-2xl lg:text-4xl p-2 m-2 rounded-lg bg-opacity-70 shadow-md'>SU DESCANSO ES NUESTRA PRIORIDAD...</h1>
       <div className='h-screen w-screen absolute -z-10 overflow-hidden'>
 
-        <ul ref={lisRef}>
+        <ul ref={lisRef} >
           {
             listImages.map((item, index) => {
               if (index == 0) {
-                return <li key={index}>
+                return <li key={index} className='whitespace-nowrap inline'>
                   <video loop autoPlay muted type="video/mp4" src={item.img} className="w-screen h-screen object-cover" />
                 </li>
               }
               else {
-                return <li key={index}>
+                return <li key={index} className='whitespace-nowrap inline'>
                   <img src={item.img} className="w-screen h-screen object-cover" />
                 </li>
               }

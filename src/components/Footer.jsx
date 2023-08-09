@@ -17,9 +17,11 @@ function Footer() {
                             <BsInstagram size={30} color='white' />
                         </div>
                     </a>
-                    <div className='rounded-full bg-white w-12 h-12 flex items-center justify-center'>
-                        <BsMailbox size={30} color='black' />
-                    </div>
+                    <a href='mailto:contacto@posadapiedemonte.com' className='cursor-pointer'>
+                        <div className='rounded-full bg-white w-12 h-12 flex items-center justify-center'>
+                            <BsMailbox size={30} color='black' />
+                        </div>
+                    </a>
                 </div>
                 <a href="https://www.posadapiedemonte.com/" target="_blank" className='p-4 text-blue-500 underline'>www.PosadaPieDeMonte.com</a>
 

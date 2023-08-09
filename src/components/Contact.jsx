@@ -13,8 +13,8 @@ function Contact() {
 
       </div>
       <Navbar />
-      <div className='overflow-auto h-[40rem]'>
-        <div className='flex flex-col lg:flex-row items-center justify-center text-center gap-4 bg-orange-400 bg-opacity-10'>
+      <div className='overflow-auto  h-[30rem] lg:h-[40rem]'>
+        <div className='mt-8 flex flex-col lg:flex-row items-center justify-center text-center gap-4 bg-orange-400 bg-opacity-10'>
           <div className='w-2/3 px-11 flex flex-col items-center justify-center border-green-700 rounded-md border-solid border-4 p-2 m-4 bg-green-600 bg-opacity-50 text-white'>
             <h1 className='text-2xl mb-4 border-b-2 border-solid border-white p-4 font-bold'>Dirección</h1>
             <p>Av. rotaria urbanizacion altos de los criollitos, San Cristóbal, Táchira, Venezuela</p>
@@ -23,12 +23,32 @@ function Contact() {
           <div className='px-11 flex flex-col items-center justify-center border-green-700 rounded-md border-solid border-4 p-4 m-4 mb-0 bg-green-600 bg-opacity-50 text-white'>
             <h1 className='text-2xl mb-4 border-b-2 border-solid border-white'>Su Descanso es nuestra prioridad</h1>
             <h3>Contáctenos:</h3>
-            <div>
-              <label>Instagram:</label><BsInstagram  className='flex'/>
-              <label>Facebook:</label><BsFacebook />
-              <label>Correo:</label><BsMailbox />
-              
+            <h3 className='text-2xl'>telf:+58 424-7262101</h3>
+            <div className='p-4'>
+              <div className='flex gap-4 m-2'>
+                <label className='w-40'>Instagram:</label>
+                <a className='rounded-full bg-white bg-opacity-50 w-10 h-10 flex justify-center items-center hover:bg-opacity-100 cursor-pointer' href="https://www.facebook.com/posadapiedemont/" target='_blank'>
+                  <BsInstagram size={30} color='purple' className='' />
+                </a>
+              </div>
+              <div className='flex gap-4 m-2'>
+                <label className='w-40'>Facebook:</label>
+                <a className='rounded-full bg-white bg-opacity-50 w-10 h-10 flex justify-center items-center hover:bg-opacity-100 cursor-pointer' href="https://www.instagram.com/posada.piedemonte/" target='_blank'>
+                  <BsFacebook size={30} color='#3b5998' />
+                </a>
+              </div>
+              <div className='flex gap-4 m-2 '>
+                <label className='w-40'>Correo:</label>
+                <a className='rounded-full bg-white bg-opacity-50 w-10 h-10 flex justify-center items-center hover:bg-opacity-100 cursor-pointer' href="mailto:contacto@posadapiedemonte.com" target='_blank'>
+                  <BsMailbox size={30} color="black" />
+                </a>
+              </div>
+              <div className='flex items-center justify-center mt-4'>
+                <img src="./media/images/logo-removebg.png" className='bg-white bg-opacity-50 rounded-lg'>
+                </img>
+              </div>
             </div>
+
             <div>
 
             </div>
